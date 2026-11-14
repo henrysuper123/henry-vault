@@ -1,0 +1,41 @@
+/* Cool look: soft accent colors, rounded notes, clean headings */
+.theme-dark {
+  --accent-h: 265;
+  --accent-s: 85%;
+  --accent-l: 68%;
+  --interactive-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
+  --text-accent: hsl(var(--accent-h) var(--accent-s) 78%);
+  --background-primary: #0f0f14;
+  --background-secondary: #16161d;
+}
+
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .cm-header-1 {
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #a78bfa, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.markdown-preview-view a.internal-link,
+.cm-hmd-internal-link {
+  text-decoration: none;
+  border-bottom: 1px dotted var(--text-accent);
+}
+
+.markdown-preview-view blockquote {
+  border-left: 3px solid var(--interactive-accent);
+  border-radius: 0 8px 8px 0;
+  background: var(--background-secondary);
+}
+
+.markdown-preview-view code {
+  border-radius: 6px;
+}
+
+.workspace-leaf-content[data-type="markdown"] .markdown-reading-view,
+.workspace-leaf-content[data-type="markdown"] .cm-scroller {
+  max-width: 48rem;
+  margin: 0 auto;
+}
